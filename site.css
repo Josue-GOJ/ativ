@@ -1,0 +1,120 @@
+/* static/css/estilos.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+.section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+/* Layout para Máquinas Virtuais */
+#maquinas-virtuais {
+    display: flex;
+    align-items: center;
+}
+#maquinas-virtuais img {
+    width: 50%;
+    margin-right: 20px;
+}
+/* Layout para Redes Virtuais */
+#redes-virtuais {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+#redes-virtuais img {
+    width: 50%;
+    margin-left: 20px;
+}
+/* Layout para Servidor de Aplicativos */
+#servidor-aplicativos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+#servidor-aplicativos img {
+    width: 100%;
+    height: auto;
+}
+/* Layout para Banco de Dados */
+#banco-dados {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+#banco-dados img {
+    width: 100%;
+    opacity: 0.8;
+}
+#banco-dados .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(44, 62, 80, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}
+/* Layout para TCC */
+#tcc {
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-left: 5px solid #2980b9;
+}
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+@media (max-width: 768px) {
+    #maquinas-virtuais, #redes-virtuais {
+        flex-direction: column;
+    }
+    #maquinas-virtuais img, #redes-virtuais img {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+    #servidor-aplicativos {
+        grid-template-columns: 1fr;
+    }
+}
+#blob {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+#blob img {
+    width: 100%;
+    opacity: 0.8;
+}
+#blob .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(44, 62, 80, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+}

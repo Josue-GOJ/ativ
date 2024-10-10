@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Jornal Digital de Tecnologia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #2c3e50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2em;
+            font-weight: bold;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 20px auto;
+        }
+        .section {
+            background-color: white;
+            margin-bottom: 20px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Layout para Máquinas Virtuais */
+        #maquinas-virtuais {
+            display: flex;
+            align-items: center;
+        }
+        #maquinas-virtuais img {
+            width: 50%;
+            margin-right: 20px;
+        }
+        /* Layout para Redes Virtuais */
+        #redes-virtuais {
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+        #redes-virtuais img {
+            width: 50%;
+            margin-left: 20px;
+        }
+        /* Layout para Servidor de Aplicativos */
+        #servidor-aplicativos {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        #servidor-aplicativos img {
+            width: 100%;
+            height: auto;
+        }
+        /* Layout para Banco de Dados */
+        #banco-dados {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        #banco-dados img {
+            width: 100%;
+            opacity: 0.8;
+        }
+        #banco-dados .overlay {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(44, 62, 80, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        /* Layout para TCC */
+        #tcc {
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-left: 5px solid #2980b9;
+        }
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            #maquinas-virtuais, #redes-virtuais {
+                flex-direction: column;
+            }
+            #maquinas-virtuais img, #redes-virtuais img {
+                width: 100%;
+                margin: 0 0 20px 0;
+            }
+            #servidor-aplicativos {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        Jornal Digital de Tecnologia
+    </header>
+
+    <div class="container">
+
+        <!-- Máquinas Virtuais -->
+        <section id="maquinas-virtuais" class="section">
+            <img src="imagem_maquinas_virtuais.jpg" alt="Máquinas Virtuais">
+            <div>
+                <h2>Máquinas Virtuais</h2>
+                <p>Máquinas virtuais (VMs) são emulações de sistemas de computação que permitem executar sistemas operacionais completos em um ambiente isolado dentro de um host físico. Elas são essenciais para testar softwares, desenvolver aplicações e otimizar recursos de hardware, proporcionando flexibilidade e escalabilidade nas operações de TI.</p>
+            </div>
+        </section>
+
+        <!-- Redes Virtuais -->
+        <section id="redes-virtuais" class="section">
+            <img src="imagem_redes_virtuais.jpg" alt="Redes Virtuais">
+            <div>
+                <h2>Redes Virtuais</h2>
+                <p>Redes virtuais (VLANs) são sub-redes que agrupam um conjunto de dispositivos em uma rede física, independentemente de sua localização geográfica. Elas melhoram a segurança, o gerenciamento e a eficiência do tráfego de dados, permitindo a segmentação lógica das redes conforme as necessidades da organização.</p>
+            </div>
+        </section>
+
+        <!-- Servidor de Aplicativos -->
+        <section id="servidor-aplicativos" class="section">
+            <div>
+                <h2>Servidor de Aplicativos</h2>
+                <p>Um servidor de aplicativos é uma plataforma que hospeda e gerencia aplicações empresariais. Ele fornece os recursos necessários para o desenvolvimento, execução e manutenção de aplicações, garantindo desempenho, segurança e disponibilidade para os usuários finais.</p>
+            </div>
+            <img src="imagem_servidor_aplicativos.jpg" alt="Servidor de Aplicativos">
+        </section>
+
+        <!-- Banco de Dados -->
+        <section id="banco-dados" class="section">
+            <img src="imagem_banco_dados.jpg" alt="Banco de Dados">
+            <div class="overlay">
+                <h2>Banco de Dados</h2>
+                <p>Banco de dados é um sistema organizado para armazenar, gerenciar e recuperar informações de forma eficiente. Ele é fundamental para aplicações que necessitam de acesso rápido e confiável a grandes volumes de dados, suportando operações de consulta, atualização e análise.</p>
+            </div>
+        </section>
+
+        <!-- TCC de Monitoramento -->
+        <section id="tcc" class="section">
+            <h2>Trabalho de Conclusão de Curso: Monitoramento de Redes</h2>
+            <p>Meu TCC aborda o monitoramento da rede da empresa cliente Atacadão Cotia, utilizando a nuvem da AWS e o Prometheus. A solução desenvolvida permite a vigilância em tempo real do desempenho e da segurança da rede, identificando e respondendo rapidamente a quaisquer erros ou falhas, garantindo a continuidade das operações empresariais.</p>
+        </section>
+        </div>
+         
+        <!-- Blob -->
+        <section id="blob" class="section">
+            <img src="images-serviço-blob.jpg" alt="blob">
+            <div class="overlay">
+                <h2>blob</h2>
+                <p>O Armazenamento de Blobs do Azure é uma solução de armazenamento de objetos da Microsoft para a nuvem. O Armazenamento de Blobs é otimizado para armazenar grandes quantidades de dados não estruturados. Dados não estruturados são dados que não estão de acordo com uma definição ou um modelo de dados específico, como texto ou dados binários..</p>
+            </div>
+        </section>
+
+    <footer>
+        © 2024 Jornal Digital de Tecnologia. Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
